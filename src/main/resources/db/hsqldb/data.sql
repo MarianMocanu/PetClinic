@@ -51,3 +51,7 @@ INSERT INTO visits VALUES (1, 7, '2013-01-01', 'rabies shot');
 INSERT INTO visits VALUES (2, 8, '2013-01-02', 'rabies shot');
 INSERT INTO visits VALUES (3, 8, '2013-01-03', 'neutered');
 INSERT INTO visits VALUES (4, 7, '2013-01-04', 'spayed');
+
+INSERT INTO drugs VALUES (1, 'Alprazolam ', '2024-01-01', 1);
+INSERT INTO drugs VALUES (2, 'Carprofen ', '2024-01-02', 2);
+INSERT INTO drugs VALUES (3, 'Cyproheptadine ', '2018-01-03', 3);

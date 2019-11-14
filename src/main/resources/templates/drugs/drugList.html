@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+
+<html xmlns:th="https://www.thymeleaf.org"
+      th:replace="~{fragments/layout :: layout (~{::body},'vets')}">
+
+<body>
+
+<h2>Drugs</h2>
+
+<table id="drugs" class="table table-striped">
+    <thead>
+    <tr>
+        <th>Id</th>
+        <th>Name</th>
+        <th>Expiry Date</th>
+        <th>Pet Type</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="drug : ${drugs.drugList}">
+        <td th:text="${drug.id}"></td>
+        <td th:text="${drug.name}"></td>
+        <td th:text="${drug.expiryDate}"></td>
+        <td th:text="${drug.petTypeId}"></td>
+    </tr>
+    </tbody>
+</table>
+
+</body>
+</html>
